@@ -1,0 +1,27 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.iml
+
+# Node / Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/package-lock.json
+
+# Java / Maven
+backend/target/
+backend/*.jar
+backend/.project
+backend/.classpath
+backend/.settings/
+
+# Runtime uploads & database
+uploads/
+backend/uploads/
+*.h2.db
+.env
+

@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="userBubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="620" fill="#f8fafc" />
+
+  <!-- Navbar -->
+  <rect x="0" y="0" width="1000" height="60" fill="#0f172a" />
+  <rect x="25" y="12" width="36" height="36" rx="8" fill="url(#primaryGrad)" />
+  <path d="M43 22 L35 22 A 2 2 0 0 0 33 24 L33 36 A 2 2 0 0 0 35 38 L47 38 A 2 2 0 0 0 49 36 L49 28 Z" fill="none" stroke="#ffffff" stroke-width="2" />
+  <text x="72" y="32" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="15" font-weight="700">AI DocPortal</text>
+  <text x="72" y="44" fill="#94a3b8" font-family="sans-serif" font-size="9">RAG &amp; Document Intelligence</text>
+
+  <text x="270" y="35" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="600">Documents</text>
+  <text x="370" y="35" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="600">Upload PDF</text>
+  <rect x="460" y="15" width="100" height="30" rx="6" fill="#1e293b" />
+  <text x="475" y="35" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">💬 Chat Active</text>
+
+  <!-- Two Column Layout -->
+  <!-- Left Sidebar (Width: 280) -->
+  <g transform="translate(0, 60)">
+    <rect x="0" y="0" width="280" height="560" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    
+    <!-- Sidebar Header -->
+    <text x="20" y="32" fill="#0f172a" font-family="sans-serif" font-size="13" font-weight="700">ACTIVE DOCUMENTS</text>
+    <rect x="180" y="16" width="80" height="24" rx="6" fill="#eef2ff" stroke="#c7d2fe" />
+    <text x="190" y="32" fill="#4f46e5" font-family="sans-serif" font-size="10" font-weight="700">+ Add PDF</text>
+
+    <!-- Doc Item 1 (Selected) -->
+    <rect x="12" y="50" width="256" height="56" rx="8" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1" />
+    <rect x="22" y="62" width="28" height="24" rx="4" fill="#fee2e2" />
+    <text x="27" y="78" fill="#dc2626" font-family="sans-serif" font-size="8" font-weight="800">PDF</text>
+    <text x="58" y="72" fill="#1e293b" font-family="sans-serif" font-size="11" font-weight="700">kyc_verification_audit_report</text>
+    <text x="58" y="87" fill="#4f46e5" font-family="sans-serif" font-size="9" font-weight="600">1 page • 3 vector chunks (Active)</text>
+
+    <!-- Doc Item 2 -->
+    <rect x="12" y="114" width="256" height="52" rx="8" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+    <rect x="22" y="126" width="28" height="24" rx="4" fill="#fee2e2" />
+    <text x="27" y="142" fill="#dc2626" font-family="sans-serif" font-size="8" font-weight="800">PDF</text>
+    <text x="58" y="136" fill="#334155" font-family="sans-serif" font-size="11" font-weight="600">enterprise_service_sla_contract</text>
+    <text x="58" y="151" fill="#94a3b8" font-family="sans-serif" font-size="9">2 pages • 5 chunks</text>
+
+    <!-- Context Card -->
+    <rect x="12" y="360" width="256" height="185" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="24" y="385" fill="#4f46e5" font-family="sans-serif" font-size="9" font-weight="800">DOCUMENT CONTEXT</text>
+    <rect x="195" y="373" width="60" height="18" rx="9" fill="#ecfdf5" />
+    <text x="207" y="386" fill="#059669" font-family="sans-serif" font-size="9" font-weight="700">INDEXED</text>
+
+    <text x="24" y="410" fill="#0f172a" font-family="sans-serif" font-size="11" font-weight="700">Rahul Verma KYC Audit</text>
+    <text x="24" y="426" fill="#64748b" font-family="sans-serif" font-size="9">ID: KYC-2026-98421 • Low Risk</text>
+
+    <rect x="24" y="438" width="232" height="95" rx="6" fill="#ffffff" stroke="#e2e8f0" />
+    <text x="32" y="454" fill="#64748b" font-family="sans-serif" font-size="8" font-weight="700">EXTRACTED OVERVIEW:</text>
+    <text x="32" y="470" fill="#334155" font-family="sans-serif" font-size="9">OCR Match Score: 99.4%</text>
+    <text x="32" y="486" fill="#334155" font-family="sans-serif" font-size="9">PAN ABCDE1234F: NSDL Verified</text>
+    <text x="32" y="502" fill="#334155" font-family="sans-serif" font-size="9">Aadhaar: UIDAI Valid (Pass)</text>
+    <text x="32" y="518" fill="#334155" font-family="sans-serif" font-size="9">Face Match: 94.8% (Verified)</text>
+  </g>
+
+  <!-- Right Main Chat Workspace (X: 280, Width: 720) -->
+  <g transform="translate(280, 60)">
+    <!-- Chat Header Bar -->
+    <rect x="0" y="0" width="720" height="50" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <circle cx="25" cy="25" r="5" fill="#10b981" />
+    <text x="38" y="24" fill="#0f172a" font-family="sans-serif" font-size="13" font-weight="700">Querying: kyc_verification_audit_report.pdf</text>
+    <text x="38" y="38" fill="#64748b" font-family="sans-serif" font-size="9">RAG Vector Search Active • Apache PDFBox 3.x</text>
+
+    <rect x="580" y="12" width="60" height="26" rx="6" fill="#ffffff" stroke="#cbd5e1" />
+    <text x="590" y="29" fill="#475569" font-family="sans-serif" font-size="10" font-weight="600">Clear</text>
+    <rect x="648" y="12" width="60" height="26" rx="6" fill="#ffffff" stroke="#cbd5e1" />
+    <text x="655" y="29" fill="#475569" font-family="sans-serif" font-size="10" font-weight="600">Export</text>
+
+    <!-- Message Thread Area -->
+    <!-- Message 1: User Question -->
+    <g transform="translate(40, 75)">
+      <rect x="230" y="0" width="410" height="48" rx="12" fill="url(#userBubbleGrad)" filter="url(#cardShadow)" />
+      <text x="245" y="22" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="500">What is Rahul Verma's PAN status and face match score?</text>
+      <text x="615" y="38" fill="#c7d2fe" font-family="sans-serif" font-size="8">10:42 AM</text>
+    </g>
+
+    <!-- Message 2: AI Answer -->
+    <g transform="translate(40, 140)">
+      <!-- AI Avatar -->
+      <rect x="0" y="0" width="32" height="32" rx="8" fill="#0f172a" />
+      <text x="10" y="20" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="800">AI</text>
+
+      <!-- AI Bubble Card -->
+      <rect x="42" y="0" width="600" height="175" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow)" />
+      
+      <text x="60" y="25" fill="#0f172a" font-family="sans-serif" font-size="11" font-weight="600">Based on <tspan font-weight="800">kyc_verification_audit_report</tspan> (<tspan fill="#4f46e5" font-weight="700">Page 1</tspan>):</text>
+      
+      <text x="60" y="50" fill="#334155" font-family="sans-serif" font-size="11">• <tspan font-weight="700">PAN Number:</tspan> ABCDE1234F is <tspan fill="#059669" font-weight="700">MATCHED</tspan> with 99.8% confidence (NSDL Verified).</text>
+      <text x="60" y="72" fill="#334155" font-family="sans-serif" font-size="11">• <tspan font-weight="700">Face Match Score:</tspan> Aadhaar photo vs biometric selfie is <tspan font-weight="700">94.8%</tspan> (PASS - Verified).</text>
+      <text x="60" y="94" fill="#334155" font-family="sans-serif" font-size="11">• <tspan font-weight="700">Risk Assessment:</tspan> Approved with a composite risk score of 0.08 (Low Risk).</text>
+      <text x="60" y="114" fill="#64748b" font-family="sans-serif" font-size="9" font-style="italic">*(Extracted via RAG vector-ranking from Page 1)*</text>
+
+      <!-- Citations divider & badges -->
+      <line x1="60" y1="128" x2="620" y2="128" stroke="#e2e8f0" stroke-dasharray="3,3" />
+      <text x="60" y="145" fill="#64748b" font-family="sans-serif" font-size="9" font-weight="700">VERIFIED SOURCES &amp; CITATIONS:</text>
+
+      <!-- Citation Badge -->
+      <rect x="60" y="150" width="130" height="20" rx="4" fill="#eef2ff" stroke="#c7d2fe" />
+      <text x="68" y="163" fill="#4338ca" font-family="sans-serif" font-size="9" font-weight="700">🔍 Page 1 (Chunk #1)</text>
+
+      <rect x="198" y="150" width="125" height="20" rx="4" fill="#ecfdf5" stroke="#a7f3d0" />
+      <text x="206" y="163" fill="#059669" font-family="sans-serif" font-size="9" font-weight="700">✓ Confidence: 18.5</text>
+    </g>
+
+    <!-- Suggested Prompt Chips -->
+    <g transform="translate(40, 335)">
+      <text x="0" y="12" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="700">SUGGESTED QUESTIONS:</text>
+      <rect x="0" y="20" width="280" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0" />
+      <text x="12" y="37" fill="#334155" font-family="sans-serif" font-size="10">💡 What is the SLA uptime guarantee &amp; penalty?</text>
+
+      <rect x="290" y="20" width="240" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0" />
+      <text x="302" y="37" fill="#334155" font-family="sans-serif" font-size="10">💡 Summarize all parties and dates</text>
+    </g>
+
+    <!-- Bottom Chat Input Bar -->
+    <g transform="translate(0, 480)">
+      <rect x="0" y="0" width="720" height="80" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+      
+      <rect x="30" y="14" width="560" height="42" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+      <text x="45" y="39" fill="#94a3b8" font-family="sans-serif" font-size="11">Ask a question about this document (e.g., 'What are the termination clauses?')...</text>
+
+      <rect x="600" y="14" width="90" height="42" rx="8" fill="url(#primaryGrad)" />
+      <text x="626" y="39" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="700">Ask AI ➜</text>
+
+      <text x="450" y="68" fill="#94a3b8" font-family="sans-serif" font-size="9">Press Enter to send • Shift + Enter for new line</text>
+    </g>
+  </g>
+</svg>
+
