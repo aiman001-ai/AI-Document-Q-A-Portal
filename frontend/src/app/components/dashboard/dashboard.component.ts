@@ -558,7 +558,7 @@ export class DashboardComponent implements OnInit {
   previewDoc: DocumentItem | null = null;
   previewChunks: DocumentChunk[] = [];
 
-  constructor(private documentService: DocumentService, private router: Router) {}
+  constructor(private documentService: DocumentService, private router: Router) { }
 
   ngOnInit(): void {
     this.loadDocuments();
